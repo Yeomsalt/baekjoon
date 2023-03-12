@@ -12,23 +12,24 @@ package baekjoon_test03;
 import java.util.*;
 
 public class Test04 {
-	public static void main(String[]args) {
-		Scanner in = new Scanner(System.in);
-		
-		int X = in.nextInt();
-		int N = in.nextInt();
-		int sum = 0;
-		
-		for(int i =0; i<N; i++) {
-			int a = in.nextInt();
-			int b = in.nextInt();
-			int k = (a*b);
-			sum += k;
-		}
-		if(X==sum) {
-			System.out.println("Yes");
-		}else {
-			System.out.println("No");
-		}
-	}
+	public static void main(String[]args){
+        Scanner in = new Scanner(System.in);
+        
+        int X = in.nextInt();
+        int N = in.nextInt();
+        int sum = 0;
+        for(int i =0; i<N; i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int k =(a*b);
+            sum += k;
+        }
+        if(X==sum){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
+        
+    }
+
 }
